@@ -9,7 +9,7 @@ pipeline {
     stage('Report') {
       steps {
         catchError() {
-          sh 'Get-Service'
+          sh 'hostname'
         }
         
       }
