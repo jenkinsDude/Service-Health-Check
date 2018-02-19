@@ -6,5 +6,10 @@ pipeline {
         build 'PowershellzCopy'
       }
     }
+    stage('Report') {
+      steps {
+        isUnix()
+      }
+    }
   }
 }
