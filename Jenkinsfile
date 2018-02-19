@@ -9,7 +9,7 @@ pipeline {
     stage('Report') {
       steps {
         catchError() {
-          build 'PowershellzCopy'
+          sh 'Get-Service'
         }
         
       }
